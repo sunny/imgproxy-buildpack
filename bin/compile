@@ -95,7 +95,7 @@ EOF
 
 title "Building imgproxy..."
 mkdir "$build_dir/bin"
-cd $build_dir
+
 cp -r vendor/* "$GOROOT/src/"
 go build -tags heroku -o "$build_dir/bin/imgproxy"
 
